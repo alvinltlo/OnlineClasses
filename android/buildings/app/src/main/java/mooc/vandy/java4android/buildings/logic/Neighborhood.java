@@ -10,6 +10,8 @@ import mooc.vandy.java4android.buildings.ui.OutputInterface;
  */
 public final class Neighborhood {
 
+    private Neighborhood() {}
+
     public static void print(Building[] buildings, String header, OutputInterface out) {
         out.println(header);
         out.println("\u00AD\u00AD\u00AD\u00AD\u00AD\u00AD\u00AD\u00AD\u00AD\u00AD");
