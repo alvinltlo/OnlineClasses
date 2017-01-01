@@ -35,7 +35,7 @@ public class Office extends Building {
             message += "; has " + mParkingSpaces + " parking spaces";
         }
 
-        message += " (total offices:" + sTotalOffices​ + ")";
+        message += " (total offices: " + sTotalOffices​ + ")";
         return message;
     }
     public boolean equals(Object other) {

@@ -33,7 +33,7 @@ public class House extends Building {
             message += "; has a pool";
         }
         if (calcLotArea() > calcBuildingArea()) {
-            message += "; has big open space";
+            message += "; has a big open space";
         }
 
         return message;
