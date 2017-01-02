@@ -5,5 +5,6 @@ package mooc.vandy.java4android.calculator.logic;
  */
 public class Add extends Calculator {
     public Add(int one, int two) { super(one, two); }
+
     public int calculate() { return one + two; }
 }
