@@ -11,7 +11,3 @@ public interface LogicInterface {
                         int argumentTwo,
                         int operation);
 }
-
-public interface Calculator {
-    public int calculate(int one, int two);
-}
