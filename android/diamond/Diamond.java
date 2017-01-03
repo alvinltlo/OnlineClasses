@@ -24,12 +24,16 @@ public class Diamond {
 					System.out.print(writeChars(filler, width));
 					System.out.print(">");
 				} else {
+					// print top and bottom traingle.
 					int sideSpace = size - row;
-					System.out.print(writeChars(' ', Math.abs(sideSpace)));
-					System.out.print((sideSpace > 0) ? "/" : "\\");
-					System.out.print(writeChars(filler, width - Math.abs(sideSpace) *2));
-					System.out.print((sideSpace > 0) ? "\\" : "/");
-					System.out.print(writeChars(' ', Math.abs(sideSpace)));
+					// when sideSpace < 0, means we are processing the bottom.
+					boolean isTop = sideSpace > 0;
+					sideSpace = Math.abs(sideSpace); 
+					System.out.print(writeChars(' ', sideSpace));
+					System.out.print(isTop ? "/" : "\\");
+					System.out.print(writeChars(filler, width - sideSpace * 2));
+					System.out.print(isTop ? "\\" : "/");
+					System.out.print(writeChars(' ', sideSpace));
 				}
 
 				System.out.println("|");
